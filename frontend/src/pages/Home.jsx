@@ -5,8 +5,8 @@ import Nav from '../component/Nav';
 const Home = () => {
     return (
         <>
-            <div className='h-screen w-full bg-[#ffffff8c]'>
-                <div className='container mx-auto my-16'>
+            <div className='h-screen w-full'>
+                <div className='container mx-auto'>
                     <Nav />
                 </div>
            </div>
