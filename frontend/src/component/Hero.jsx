@@ -6,7 +6,7 @@ import './Hero.css'
 const Hero = () => {
     return (
         <>
-            <div className="hero h-full w-full mx-auto md:px-8 flex gap-4 justify-center items-center py-14">
+            <div className="hero h-full w-full mx-auto flex gap-4 justify-center items-center">
                 <div className="w-full">
                     <img className="rounded-lg duration-[600ms] xl:max-w-[50%] lg:max-w-[60%] sm:max-w-[70%] mx-auto" src={Photo} alt="My Image" />
                 </div>
