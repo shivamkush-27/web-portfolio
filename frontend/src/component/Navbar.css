@@ -1,0 +1,8 @@
+#menu-toggle:checked + #menu {
+    display: block;
+}
+@media only screen and (max-width:426px){
+    .logo-img{
+        margin: auto -18%;
+    }
+}
