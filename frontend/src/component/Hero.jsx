@@ -35,7 +35,7 @@ const Hero = () => {
                         />
                     </span></h1>
                     {/* Display on small devices */}
-                    <h1 className='lg:hidden block'><h2 className="sm:text-4xl text-2xl font-semibold font-serif">Hi, I'm Shivam</h2><span className="capitalize text-3xl typing text-[#8750F7]">
+                    <h1 className='lg:hidden block'><span className="sm:text-4xl text-2xl font-semibold font-serif">Hi, I'm Shivam</span><span className="capitalize text-3xl typing text-[#8750F7]">
                         <TypeAnimation
                             sequence={[
                                 'Front End Developer', 
