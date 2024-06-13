@@ -3,9 +3,13 @@ import { Education, Experience } from '../constant/res-history';
 
 const Resume = () => {
     return (
-            <section className="grid gap-12 md:justify-center md:grid-cols-3 xl:gap-36 bg-[#140C1C] md:gap-4 md:p-4 px-10">
+        <>
+            <div className="section-header">
+                <h2 className='bg-clip-text text-5xl font-bold text-transparent bg-gradient-to-r from-[#8750F7] to-white pb-2 mb-2'>Education & Work Experience</h2>
+            </div>
+            <section className="grid gap-12 md:justify-between md:grid-cols-3 xl:gap-36 bg-[#140C1C] md:gap-4 md:p-4 px-10 border border-[#2a1454] rounded-2xl my-8">
                 <div className="w-full">
-                    <div className="md:px-7 pt-8 xl:px-10 rounded-[20px] mb-8">
+                    <div className="md:px-7 pt-8 rounded-[20px] mb-8">
                         <h4 className='bg-clip-text text-xl font-bold text-[#8750f7] pb-4 mb-2 uppercase'>Education</h4>
                         <div className="max-w-xl mx-auto py-4">
                             <div className="flow-root">
@@ -38,7 +42,7 @@ const Resume = () => {
                     </div>
                 </div>
                 <div className="w-full">
-                    <div className="md:px-7 pt-8 xl:px-10 rounded-[20px] mb-8">
+                    <div className="md:px-7 pt-8 rounded-[20px] mb-8">
                         <h4 className='bg-clip-text text-xl font-bold text-[#8750f7] pb-4 mb-2 uppercase'>Experience</h4>
                         <div className="max-w-xl mx-auto py-4">
                             <div className="flow-root">
@@ -71,7 +75,7 @@ const Resume = () => {
                     </div>
                 </div>
                 <div className="w-full">
-                    <div className="md:px-7 pt-8 xl:px-10 rounded-[20px] mb-8">
+                    <div className="md:px-7 pt-8 rounded-[20px] mb-8">
                         <h4 className='bg-clip-text text-xl font-bold text-[#8750f7] pb-4 mb-2 uppercase'>Past Roles</h4>
                         <div className="max-w-xl mx-auto py-4">
                             <div className="flow-root">
@@ -104,6 +108,7 @@ const Resume = () => {
                     </div>
                 </div>
             </section>
+        </>
     )
 }
 

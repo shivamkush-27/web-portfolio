@@ -5,6 +5,7 @@ import Hero from '../component/Hero';
 import Counter from '../component/Counter';
 import Services from '../component/Services';
 import Resume from '../component/Resume';
+import Skills from '../component/Skills';
 
 const Home = () => {
     return (
@@ -19,11 +20,14 @@ const Home = () => {
                 <section className='md:px-8 xl:px-0 py-8 lg:mt-8 lg:mx-16 lg:bg-[#140c1c] lg:border border-[#2a1454] rounded-2xl'>
                     <Counter />
                 </section>
-                <section className='pt-8 lg:mt-8 lg:mx-16 md:mx-4' id='services'>
+                <section className='pt-8 lg:mt-8 lg:mx-16 md:mx-4 scroll-mt-8' id='services'>
                     <Services />
                 </section>
-                <section className='md:p-0 xl:px-0 lg:mt-4 lg:mx-16 md:mx-4 lg:bg-[#140c1c] border border-[#2a1454] rounded-2xl'>
+                <section className='md:p-0 xl:px-0 lg:mx-16 md:mx-4 scroll-mt-8' id='resume'>
                     <Resume />
+                </section>
+                <section className='pt-8 lg:mt-8 lg:mx-16 md:mx-4 scroll-mt-8' id='services'>
+                    <Skills />
                 </section>
             </div>
         </>
