@@ -26,7 +26,7 @@ const Home = () => {
                 <section className='md:p-0 xl:px-0 lg:mx-16 md:mx-4 scroll-mt-8' id='resume'>
                     <Resume />
                 </section>
-                <section className='pt-8 lg:mt-8 lg:mx-16 md:mx-4 scroll-mt-8' id='services'>
+                <section className='pt-8 lg:mt-8 lg:mx-16 md:mx-4 scroll-mt-4' id='skills'>
                     <Skills />
                 </section>
             </div>

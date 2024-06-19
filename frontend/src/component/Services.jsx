@@ -10,7 +10,7 @@ const Services = () => {
                 <div className="container">
                     <div className="flex flex-wrap -mx-4">
                         <div className="w-full md:w-1/2 px-4">
-                            <div className="p-10 md:px-7 xl:px-10 rounded-[20px] bg-[#140C1C] shadow-md hover:shadow-lg mb-8  border border-[#2a1454] hover:border-[#8750F7] duration-[600ms]">
+                            <div className="p-10 md:px-7 xl:px-10 rounded-[20px] bg-[#140C1C] shadow-md hover:shadow-lg mb-8 border border-[#2a1454] hover:border-[#8750F7] duration-[600ms]">
                                 <div className=" w-[70px] h-[70px] flex items-center justify-center bg-[#8750F7] rounded-2xl mb-8">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-panels-top-left"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
                                 </div>

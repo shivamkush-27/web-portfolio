@@ -1,0 +1,19 @@
+.skills-container{
+    filter: grayscale(100%);
+    background-color: transparent;
+}
+.skills-container:hover{
+    filter: grayscale(0%);
+    background-color: #2A1454;
+    color: #8750F7;
+}
+.skills-container:hover img{
+    transform: scale(1.05);
+    transition-duration: 600ms;
+}
+.skill-name{
+    visibility: hidden;
+}
+.skills-container:hover .skill-name{
+    visibility: visible;
+}
