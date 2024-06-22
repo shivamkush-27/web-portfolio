@@ -1,6 +1,9 @@
 import React from 'react'
 import {socialIcon, contactIcon } from '../constant/contact-info'
 const Contact = () => {
+    function handleSubmit(e) {
+        e.preventDefault();
+      }
     return (
         <>
             <div className="grid sm:grid-cols-2 gap-16 rounded-md">
@@ -36,20 +39,20 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <form action="" method="post" className="ml-auo space-y-4">
+                <form action="" method="" className="ml-auo space-y-4 text-black">
                     <input type='text' name="name" placeholder='Name'
-                        className="w-full rounded-md py-3 px-4 border text-sm outline-[#2a1454]" />
+                        className="w-full rounded-md py-3 px-4 border text-sm outline-[#2a1454]" required />
                     <input type='email'
                         name='email'
                         placeholder='Email'
-                        className="w-full rounded-md py-3 px-4 border text-sm outline-[#2a1454]" />
+                        className="w-full rounded-md py-3 px-4 border text-sm outline-[#2a1454]" required />
                     <input type='tel' placeholder='Phone Number'
-                        name='pnumber' className="w-full rounded-md py-3 px-4 border text-sm outline-[#2a1454]" />
+                        name='pnumber' className="w-full rounded-md py-3 px-4 border text-sm outline-[#2a1454]" required />
                     <textarea placeholder='Message' rows="6"
                         name='message'
                         className="w-full rounded-md px-4 border text-sm pt-2.5 outline-[#2a1454]"></textarea>
-                    <button type='button'
-                        className="text-white bg-[#8750F7] hover:bg-[#2a1454] font-semibold rounded-md text-sm px-4 py-3 w-full">Send</button>
+                    <button type='submit'
+                        className="text-white bg-[#8750F7] hover:bg-[#2a1454] font-semibold rounded-md text-sm px-4 py-3 w-full" onClick={handleSubmit}>Send</button>
                 </form>
             </div>
         </>
