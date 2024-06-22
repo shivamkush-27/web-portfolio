@@ -7,8 +7,8 @@ export const SkillInfo = [
     {icon: tailwindImg, name: "Tailwind CSS", rating:"80%"},
     {icon: jsImg, name: "Javascript", rating:"75%"},
     {icon: reactImg, name: "React", rating:"70%"},
-    {icon: elementorImg, name: "Elementor", rating:"90%"},
-    {icon: woocommerceImg, name: "Woocommerce", rating:"80%"},
     {icon: vscodeImg, name: "VSCode", rating:"80%"},
     {icon: githubImg, name: "GitHub", rating:"75%"},
+    {icon: elementorImg, name: "Elementor", rating:"90%"},
+    {icon: woocommerceImg, name: "Woocommerce", rating:"80%"},
 ];

@@ -1,13 +1,13 @@
-.skills-container{
+.skills-container img{
     filter: grayscale(100%);
     background-color: transparent;
 }
 .skills-container:hover{
-    filter: grayscale(0%);
     background-color: #2A1454;
     color: #8750F7;
 }
 .skills-container:hover img{
+    filter: grayscale(0%);
     transform: scale(1.05);
     transition-duration: 600ms;
 }
