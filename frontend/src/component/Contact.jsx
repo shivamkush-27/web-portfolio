@@ -7,7 +7,7 @@ const Contact = () => {
     return (
         <>
             <div className="grid sm:grid-cols-2 gap-16 rounded-md">
-                <div>
+                <div className='mx-auto'>
                 <h2 className='bg-clip-text text-5xl font-bold text-transparent bg-gradient-to-r from-[#8750F7] to-white pb-2 mb-2'>Let's talk together!</h2>
                     <p className="text-xl text-white mt-3">I design and code beautifully simple things and I love what I do. Just simple like that!</p>
                     <div className="mt-6">
@@ -52,7 +52,7 @@ const Contact = () => {
                         name='message'
                         className="w-full rounded-md px-4 border text-sm pt-2.5 outline-[#2a1454]"></textarea>
                     <button type='submit'
-                        className="text-white bg-[#8750F7] hover:bg-[#2a1454] font-semibold rounded-md text-sm px-4 py-3 w-full" onClick={handleSubmit}>Send</button>
+                        className="text-white bg-[#8750F7] hover:bg-[#2a1454] font-semibold rounded-full text-sm px-4 py-3 w-full" onClick={handleSubmit}>Send</button>
                 </form>
             </div>
         </>

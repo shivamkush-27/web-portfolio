@@ -61,7 +61,7 @@ const Hero = () => {
                     <p className='max-w-[52rem] text-lg'>Experienced Front End Developer with 3+ years of expertise in ReactJs, WordPress and is well versed in CSS libraries like Tailwind CSS and Bootstrap. I design and code beautifully simple things and I love what I do. Just simple like that!</p>
                     <p className='max-w-[52rem] text-lg'>Proven Track record for writing high quality content that helps is SEO of your website. Skilled in designing and Developing WordPress based websites with On-page SEO.</p>
                     <div className="sm:mt-2 xs:mt-2">
-                        <button className="px-6 py-3 bg-[#8750F7] text-white rounded-full">Get In Touch</button>
+                        <a href='#contact'><button className="px-6 py-3 bg-[#8750F7] text-white rounded-full">Get In Touch</button></a>
                     </div>
                 </div>
             </div>

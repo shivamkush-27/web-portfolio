@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <>
             <div className='h-full w-full pb-16 px-2'>
-                <section className='container mx-auto'>
+                <section className='container mx-auto sticky top-0 bg-[#0F0715] z-50'>
                     <Nav />
                 </section>
                 <section className='md:px-8 py-8 lg:mt-8 lg:mx-16 lg:bg-[#140c1c] lg:border border-[#2a1454] rounded-2xl'>
@@ -30,7 +30,7 @@ const Home = () => {
                 <section className='pt-8 lg:mt-8 lg:mx-16 md:mx-4 scroll-mt-4' id='skills'>
                     <Skills />
                 </section>
-                <section className='md:px-8 py-8 lg:mt-8 lg:mx-16 lg:bg-[#140c1c] lg:border border-[#2a1454] rounded-2xl'>
+                <section className='md:px-8 py-8 lg:mt-8 lg:mx-16 lg:bg-[#140c1c] lg:border border-[#2a1454] rounded-2xl' id='contact'>
                     <Contact />
                 </section>
             </div>
