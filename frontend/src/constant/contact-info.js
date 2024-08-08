@@ -1,7 +1,7 @@
 import { github, linkedin, location, mail } from '../assets/icons/contact';
 
 export const contactIcon= [
-    {icon: mail, label:"shivamkonline@gmail.com", link:"mailto:shivamkonline@gmail.com"},
+    {icon:mail, label:"shivamkonline@gmail.com", link:"mailto:shivamkonline@gmail.com"},
     {icon:location, label:"Gurugram, Haryana, India", link:"#"},
 ];
 

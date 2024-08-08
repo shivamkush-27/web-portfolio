@@ -14,10 +14,10 @@ const Contact = () => {
                         <ul className="mt-3">
                             {contactIcon.map((icon, index) =>(
                                 <li className="flex items-center mt-3" key={index}>
-                                <div className="bg-[#8750F7] border-[#8750F7] border-2 h-10 w-10 p-2 rounded-full flex items-center justify-center shrink-0">
+                                <div className="border-[#8750F7] border-2 h-10 w-10 p-2 rounded-full flex items-center justify-center shrink-0">
                                     <img src={icon.icon} className='text-white' />
                                 </div>
-                                <a target="blank" href={icon.link} className="text-[#8750F7] text-sm ml-3">
+                                <a target="blank" href={icon.link} className="text-white text-sm ml-3">
                                     <strong>{icon.label}</strong>
                                 </a>
                             </li>

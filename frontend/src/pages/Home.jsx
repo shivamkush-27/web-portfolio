@@ -7,32 +7,33 @@ import Services from '../component/Services';
 import Resume from '../component/Resume';
 import Skills from '../component/Skills';
 import Contact from '../component/Contact';
+import { motion } from "framer-motion"
 
 const Home = () => {
     return (
         <>
             <div className='h-full w-full pb-16 px-2'>
-                <section className='container mx-auto sticky top-0 bg-[#0F0715] z-50'>
+                <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration:0.5, delay:0.25}} className='container mx-auto sticky top-0 bg-[#0F0715] z-50'>
                     <Nav />
-                </section>
-                <section className='md:px-8 py-8 lg:mt-8 lg:mx-16 lg:bg-[#140c1c] lg:border border-[#2a1454] rounded-2xl'>
+                </motion.section>
+                <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration:1, delay:0.25}} className='md:px-8 py-8 lg:mt-8 lg:mx-16 lg:bg-[#140c1c] lg:border border-[#2a1454] rounded-2xl'>
                     <Hero />
-                </section>
-                <section className='md:px-8 xl:px-0 py-8 lg:mt-8 lg:mx-16 lg:bg-[#140c1c] lg:border border-[#2a1454] rounded-2xl'>
+                </motion.section>
+                <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration:0.5, delay:0.25}} className='md:px-8 xl:px-0 py-8 lg:mt-8 lg:mx-16 lg:bg-[#140c1c] lg:border border-[#2a1454] rounded-2xl'>
                     <Counter />
-                </section>
-                <section className='pt-8 lg:mt-8 lg:mx-16 md:mx-4 scroll-mt-8' id='services'>
+                </motion.section>
+                <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration:0.5, delay:0.25}} className='pt-8 lg:mt-8 lg:mx-16 md:mx-4 scroll-mt-8' id='services'>
                     <Services />
-                </section>
-                <section className='md:p-0 xl:px-0 lg:mx-16 md:mx-4 scroll-mt-8' id='resume'>
+                </motion.section>
+                <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration:0.5, delay:0.5}} className='md:p-0 xl:px-0 lg:mx-16 md:mx-4 scroll-mt-8' id='resume'>
                     <Resume />
-                </section>
-                <section className='pt-8 lg:mt-8 lg:mx-16 md:mx-4 scroll-mt-4' id='skills'>
+                </motion.section>
+                <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration:0.5, delay:0.5}} className='pt-8 lg:mt-8 lg:mx-16 md:mx-4 scroll-mt-4' id='skills'>
                     <Skills />
-                </section>
-                <section className='md:px-8 py-8 lg:mt-8 lg:mx-16 lg:bg-[#140c1c] lg:border border-[#2a1454] rounded-2xl' id='contact'>
+                </motion.section>
+                <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration:0.5, delay:0.5}} className='md:px-8 py-8 lg:mt-8 lg:mx-16 lg:bg-[#140c1c] lg:border border-[#2a1454] rounded-2xl' id='contact'>
                     <Contact />
-                </section>
+                </motion.section>
             </div>
         </>
     )
