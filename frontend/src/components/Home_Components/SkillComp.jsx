@@ -24,7 +24,7 @@ const SkillComp = () => {
     return (
         <div className="w-full">
             <div class="overflow-hidden">
-                <Marquee pauseOnHover={true} speed={90}>
+                <Marquee pauseOnHover={true} speed={40}>
                     <div class="flex items-center">
                         {Skills.map((skill, index) => (
                             <div class="p-6 cursor-default group/color rounded-full shadow-[inset_5px_5px_10px_#0e0e0e,inset_-5px_-5px_10px_#202735] mx-2" key={index} title={skill.name}>{skill.label}</div>
