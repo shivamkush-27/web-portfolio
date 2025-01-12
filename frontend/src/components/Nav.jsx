@@ -48,7 +48,10 @@ const Nav = () => {
           <ul className="flex flex-col items-center space-y-3 md:hidden">
             {Navlinks.map((link, index) => (
             <li>
-            <a href={link.endpoint} className="hover:underline">{link.label}</a>
+            <NavLink to={link.endpoint} className={({ isActive }) =>
+                    `relative cursor-pointer capitalize 
+                    ${isActive ? 'text-[#3B9DF8] underline underline-offset-4' : 'hover:text-[#3B9DF8]'}`
+                  }>{link.label}</NavLink>
             </li>
             ))}
           </ul>

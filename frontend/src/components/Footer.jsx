@@ -4,10 +4,9 @@ import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import { FaBlogger, FaDev, FaTwitterSquare } from "react-icons/fa";
 
 const Navlinks = [
-  { endpoint: "#services", label: "Services" },
-  { endpoint: "#projects", label: "Projects" },
   { endpoint: "#skills", label: "Skills" },
-  // { endpoint: "#reviews", label: "Testimonials" },
+  { endpoint: "#projects", label: "Projects" },
+  { endpoint: "#services", label: "Services" },
   { endpoint: "#contact", label: "Contact" },
 ];
 const SocialLinks = [
