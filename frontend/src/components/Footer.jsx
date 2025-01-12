@@ -1,6 +1,7 @@
 import React from 'react'
-import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter, IoLink } from "react-icons/io5";
 import Logo from '../assets/logo_default.webp';
+import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
+import { FaBlogger, FaDev, FaTwitterSquare } from "react-icons/fa";
 
 const Navlinks = [
   { endpoint: "#services", label: "Services" },
@@ -9,6 +10,12 @@ const Navlinks = [
   // { endpoint: "#reviews", label: "Testimonials" },
   { endpoint: "#contact", label: "Contact" },
 ];
+const SocialLinks = [
+    { name: "GitHub", label: <IoLogoGithub size={20} className='hover:text-[#6e5494]' />, href:"https://github.com/shivamkush-27" },
+    { name: "LinkedIn", label: <IoLogoLinkedin size={20} className='hover:text-[#0a66c2]' />, href:"https://www.linkedin.com/in/shivamkush-27" },
+    { name: "Blog", label: <FaBlogger size={20} className='hover:text-[#FF5722]' />, href:"https://bhogul.com/?utm_source=github&utm_medium=social" },
+    { name: "Twitter", label: <FaTwitterSquare size={20} className='hover:text-[#1DA1F2]' />, href:"https://x.com/hrt_bet_shivam" },
+  ];
 
 const Footer = () => {
   return (
@@ -27,18 +34,10 @@ const Footer = () => {
         </ul>
 
         <div className="flex items-center flex-wrap gap-[10px] text-text">
-          <a className="text-[1.3rem] p-1.5 cursor-pointer rounded-full hover:text-white hover:bg-primary transition-all duration-300" title='Visit GitHub'>
-            <IoLogoGithub className='hover:text-[#6e5494] duration-500' />
-          </a>
-          <a className="text-[1.2rem] p-1.5 cursor-pointer rounded-full hover:text-white hover:bg-primary transition-all duration-300" title='Visit LinkedIn'>
-            <IoLogoLinkedin />
-          </a>
-          <a className="text-[1.2rem] p-1.5 cursor-pointer rounded-full hover:text-white hover:bg-primary transition-all duration-300" title='See My Blog'>
-            <IoLink />
-          </a>
-          <a className="text-[1.2rem] p-1.5 cursor-pointer rounded-full hover:text-white hover:bg-primary transition-all duration-300" title='Visit Twitter'>
-            <IoLogoTwitter />
-          </a>
+          {SocialLinks.map((link, index) => (
+          <a href={link.href} className="text-[1.3rem] p-1.5 cursor-pointer rounded-full hover:text-white hover:bg-primary transition-all duration-300" title='Visit ${link.name}' key={index}>
+            {link.label}
+          </a>))}
         </div>
 
 
