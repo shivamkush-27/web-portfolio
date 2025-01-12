@@ -1,7 +1,1 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-body{
-    background-color: #0F0715;
-}
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');

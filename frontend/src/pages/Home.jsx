@@ -1,42 +1,59 @@
 import React from 'react'
-import '../App.css'
-import Nav from '../component/Nav';
-import Hero from '../component/Hero';
-import Counter from '../component/Counter';
-import Services from '../component/Services';
-import Resume from '../component/Resume';
-import Skills from '../component/Skills';
-import Contact from '../component/Contact';
-import { motion } from "framer-motion"
+import { Link } from 'react-router-dom'
+import Intro from '../components/Home_Components/Intro'
+import About from '../components/Home_Components/About'
+import ProjectComp from '../components/Home_Components/ProjectComp'
+import SkillComp from '../components/Home_Components/SkillComp'
+import Counter from '../components/Home_Components/Counter'
+import NewsTicker from '../components/Home_Components/NewsTicker'
+import ContactComp from '../components/common/ContactComp'
+
 
 const Home = () => {
-    return (
-        <>
-            <div className='h-full w-full pb-16 px-2'>
-                <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration:0.5, delay:0.25}} className='container mx-auto sticky top-0 bg-[#0F0715] z-50'>
-                    <Nav />
-                </motion.section>
-                <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration:1, delay:0.25}} className='md:px-8 py-8 lg:mt-8 lg:mx-16 lg:bg-[#140c1c] lg:border border-[#2a1454] rounded-2xl'>
-                    <Hero />
-                </motion.section>
-                <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration:0.5, delay:0.25}} className='md:px-8 xl:px-0 py-8 lg:mt-8 lg:mx-16 lg:bg-[#140c1c] lg:border border-[#2a1454] rounded-2xl'>
-                    <Counter />
-                </motion.section>
-                <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration:0.5, delay:0.25}} className='pt-8 lg:mt-8 lg:mx-16 md:mx-4 scroll-mt-8' id='services'>
-                    <Services />
-                </motion.section>
-                <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration:0.5, delay:0.5}} className='md:p-0 xl:px-0 lg:mx-16 md:mx-4 scroll-mt-8' id='resume'>
-                    <Resume />
-                </motion.section>
-                <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration:0.5, delay:0.5}} className='pt-8 lg:mt-8 lg:mx-16 md:mx-4 scroll-mt-4' id='skills'>
-                    <Skills />
-                </motion.section>
-                <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration:0.5, delay:0.5}} className='md:px-8 py-8 lg:mt-8 lg:mx-16 lg:bg-[#140c1c] lg:border border-[#2a1454] rounded-2xl' id='contact'>
-                    <Contact />
-                </motion.section>
-            </div>
-        </>
-    )
+  return (
+    <>
+      {/* Section 1 */}
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+
+        {/* Info Card */}
+        <a href='#'
+          className="group col-span-1 lg:col-span-2 flex justify-between items-center flex-col rounded-[2rem] row-span-1 lg:row-span-2 lg:h-full p-8 relative shadow-[inset_5px_5px_10px_#0e0e0e,inset_-5px_-5px_10px_#202735] cursor-pointer">
+          <a href="#" className='w-full' title='About Me'> <Intro /> </a>
+        </a>
+
+        {/* Blog Ticker */}
+        <div
+          className="rounded-full col-span-1 lg:col-span-2 flex justify-between items-center px-4 overflow-hidden relative min-h-[60px] shadow-[inset_5px_5px_10px_#0e0e0e,inset_-5px_-5px_10px_#202735] cursor-pointer">
+          <NewsTicker />
+        </div>
+
+        {/* About Me */}
+        <a href='#'
+          className="group rounded-[2rem] col-span-1 flex justify-between items-center p-8 overflow-hidden relative shadow-[inset_5px_5px_10px_#0e0e0e,inset_-5px_-5px_10px_#202735] cursor-pointer">
+          <a href="#" className='w-full' title='Credentials'> <About /> </a>
+        </a>
+
+        {/* Project */}
+        <a href='#'
+          className="group rounded-[2rem] col-span-1 flex items-center p-8 overflow-hidden relative shadow-[inset_5px_5px_10px_#0e0e0e,inset_-5px_-5px_10px_#202735] cursor-pointer">
+          <a href="#" className='w-full' title='Projects'> <ProjectComp /> </a>
+        </a>
+      </div>
+
+      {/* Section 2 */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 w-full p-1 mt-8">
+        <a href='#' title='Services' className="group col-span-1 rounded-[2rem] xl:px-12 xl:py-8 p-8 lg:col-span-6 shadow-[inset_5px_5px_10px_#0e0e0e,inset_-5px_-5px_10px_#202735] cursor-pointer">
+          <span className='w-full'> <SkillComp /> </span>
+        </a>
+        <div className="col-span-1 rounded-[2rem] xl:px-8 xl:py-8 p-8 lg:col-span-6 shadow-[inset_5px_5px_10px_#0e0e0e,inset_-5px_-5px_10px_#202735]">
+          <Counter />
+        </div>
+      </div>
+      {/* Section 3 */}
+      <ContactComp />
+      
+    </>
+  )
 }
 
 export default Home
