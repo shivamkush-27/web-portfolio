@@ -12,6 +12,7 @@ import ContactComp from '../components/common/ContactComp'
 const Home = () => {
   return (
     <>
+    <title>Shivam ~ Web Developer</title>
       {/* Section 1 */}
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
 

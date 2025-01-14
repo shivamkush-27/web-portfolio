@@ -4,10 +4,10 @@ import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import { FaBlogger, FaDev, FaTwitterSquare } from "react-icons/fa";
 
 const Navlinks = [
-  { endpoint: "#skills", label: "Skills" },
-  { endpoint: "#projects", label: "Projects" },
-  { endpoint: "#services", label: "Services" },
-  { endpoint: "#contact", label: "Contact" },
+  { endpoint: '/about-me', label: "About" },
+  { endpoint: '/projects', label: "Project" },
+  { endpoint: '/services', label: "Services" },
+  { endpoint: '/contact', label: "Contact" },
 ];
 const SocialLinks = [
     { name: "GitHub", label: <IoLogoGithub size={20} className='hover:text-[#6e5494]' />, href:"https://github.com/shivamkush-27" },

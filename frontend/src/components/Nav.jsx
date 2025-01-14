@@ -5,8 +5,8 @@ import Logo from '../assets/logo_default.webp';
 import { Link, NavLink } from 'react-router-dom';
 
 const Navlinks = [
-  { endpoint: '/about', label: "About" },
-  { endpoint: '/work', label: "Work" },
+  { endpoint: '/', label: "Home" },
+  { endpoint: '/about-me', label: "About" },
   { endpoint: '/projects', label: "Project" },
   { endpoint: '/services', label: "Services" },
   { endpoint: '/contact', label: "Contact" },
@@ -33,15 +33,15 @@ const Nav = () => {
           </ul>
 
           <div className='flex flex-nowrap gap-2'>
-            <a href='https://github.com/shivamkush-27' target='blank' className="p-4 shadow-[inset_5px_5px_10px_#0e0e0e,inset_-5px_-5px_10px_#282828] rounded-full" title='Visit GitHub' >
-              <IoLogoGithub size={20} className='hover:text-[#6e5494] duration-500' />
-            </a>
             <button
-              className="md:hidden p-4 shadow-[inset_5px_5px_10px_#0e0e0e,inset_-5px_-5px_10px_#202735] rounded-full"
+              className="md:hidden p-4 shadow-[2px_2px_10px_#0e0e0e,-2px_-2px_10px_#202735] hover:shadow-[inset_5px_5px_10px_#0e0e0e,inset_-5px_-5px_10px_#202735] rounded-full"
               onClick={() => setMenuOpen(!menuOpen)}
             >
               <RiMenu3Fill size={20} title='Open Menu' />
             </button>
+            <a href='https://github.com/shivamkush-27' target='blank' className="p-4 shadow-[inset_5px_5px_10px_#0e0e0e,inset_-5px_-5px_10px_#282828] rounded-full" title='Visit GitHub' >
+              <IoLogoGithub size={20} className='hover:text-[#6e5494] duration-500' />
+            </a>
           </div>
         </nav>
         {menuOpen && (
