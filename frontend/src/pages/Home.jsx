@@ -12,7 +12,10 @@ import ContactComp from '../components/common/ContactComp'
 const Home = () => {
   return (
     <>
+    <head>
     <title>Shivam ~ Web Developer</title>
+    <link rel="preload" as="image" href="https://shivam-kush.vercel.app/assets/Discord-BSCtQagg.jpeg"></link>
+    </head>
       {/* Section 1 */}
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
 
