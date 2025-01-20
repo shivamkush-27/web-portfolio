@@ -1,5 +1,5 @@
-import React from 'react'
-
+import toLet from '../../assets/ToLet.webp'
+import nikeShoe from '../../assets/nikeShoe.webp'
 export const Experience = [
   { position: "Front End Developer", 
     company: "ToLet Globe",
@@ -27,4 +27,18 @@ export const Education = [
   { degree: "High School, Science", 
     college: "Sacred Hearts Pub School, Bareilly",
     date: "2013 - 2014"},
+];
+export const Work=[
+  {
+    image: toLet,
+    title: "ToLet Globe",
+    description: "Built a dynamic and responsive website using ReactJS and Tailwind CSS, leveraging reusable components for efficient development. Developed a property compare feature and worked with RestAPI to build blogging system.",
+    link: "https://toletglobe.in",
+  },
+  {
+    image: nikeShoe,
+    title: "Shoe Commerce",
+    description: "Developed a Shoes eCommerce landing page using React. Most of my focus went into the Hero section where multiple shoe variety is displayed. While keeping the design simple, I built a comprehensive website that can be used to showcase the latest shoe collection.",
+    link: "https://shoe-commerce-lac.vercel.app",
+  }
 ];
