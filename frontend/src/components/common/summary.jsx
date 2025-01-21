@@ -1,5 +1,6 @@
 import toLet from '../../assets/ToLet.webp'
 import nikeShoe from '../../assets/nikeShoe.webp'
+import avenue from '../../assets/Avenue.webp'
 export const Experience = [
   { position: "Front End Developer", 
     company: "ToLet Globe",
@@ -38,7 +39,13 @@ export const Work=[
   {
     image: nikeShoe,
     title: "Shoe Commerce",
-    description: "Developed a Shoes eCommerce landing page using React. Most of my focus went into the Hero section where multiple shoe variety is displayed. While keeping the design simple, I built a comprehensive website that can be used to showcase the latest shoe collection.",
+    description: "Developed a Shoes eCommerce landing page using React. Most of my focus went into the Hero section where multiple shoe variety is displayed. While keeping the design simple, I built a comprehensive website to showcase the latest shoe collection.",
     link: "https://shoe-commerce-lac.vercel.app",
-  }
+  },
+  {
+    image: avenue,
+    title: "Avenue",
+    description: "Developed a Shoes eCommerce landing page using React. Most of my focus went into the Hero section where multiple shoe variety is displayed. While keeping the design simple, I built a comprehensive website that can be used to showcase the latest shoe collection.",
+    link: "https://shivamkush-27.github.io/avenue",
+  },
 ];

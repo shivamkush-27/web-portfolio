@@ -13,16 +13,16 @@ const Projects = () => {
       </div>
         <div className="grid grid-cols-1 xl:grid-cols-3 sm:grid-cols-2 lg:gap-8 gap-y-8 text-white mt-8">
       {Work.map((link, index) => (
-          <a href={link.link} target='blank' title='Visit Blog' className="group group/image rounded-[2rem] col-span-1 flex items-center p-8 overflow-hidden relative shadow-[inset_5px_5px_10px_#0e0e0e,inset_-5px_-5px_10px_#202735] cursor-pointer" key={index}>
+          <a href={link.link} target='blank' title='Live Preview' className="group group/image rounded-[2rem] col-span-1 flex content-between p-8 overflow-hidden relative shadow-[inset_5px_5px_10px_#0e0e0e,inset_-5px_-5px_10px_#202735] cursor-pointer" key={index}>
             <div className="">
               <div className='w-full'>
               {/* project image */}
-              <img alt="product/image" src={link.image} className="rounded-tr-[2rem] rounded-bl-[2rem] h-72 object-cover w-full object-top group-hover/image:object-bottom duration-[5s] ease-linear" />
+              <img alt="product/image" src={link.image} className="rounded-tr-[2rem] rounded-bl-[2rem] h-72 object-cover w-full object-top group-hover/image:object-bottom duration-[8s] ease-linear" />
               </div>
               {/* project details */}
               <div className="mt-4">
                 <h3 className="text-lg font-bold">{link.title}</h3>
-                <div className='flex justify-between items-end w-full space-x-1'>
+                <div className='flex justify-between items-end w-full'>
                   <p className="text-[#bcbcbc] text-base">{link.description}</p>
                   <div className='flex justify-end xl:w-auto'>
                     <svg className='stroke-gray-500 group-hover:stroke-white duration-300 ease-in-out' width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
